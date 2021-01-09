@@ -10,6 +10,9 @@
 // Site
 @import "sass/site/site-base";
 @import "sass/site/site-footer";
-@import "sass/site/site-header";
 @import "sass/site/site-nav";
 @import "sass/site/site-sidebar";
+
+// Components
+@import "sass/components/header.scss"
+

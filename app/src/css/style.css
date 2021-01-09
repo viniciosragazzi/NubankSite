@@ -4,11 +4,15 @@
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,500&display=swap");
 .black {
   color: #000; }
 
 .white {
   color: #fff; }
+
+.corPadrao {
+  color: #554af0; }
 
 /* MOBILE STYLES ------------------------------------------------------------*/
 /* MEDIA QUERY --------------------------------------------------------------*/
@@ -56,7 +60,7 @@ textarea {
 /* Large devices (large desktops, 1200px and up) */
 /* MOBILE STYLES ------------------------------------------------------------*/
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Rubik', sans-serif; }
 
 /* MEDIA QUERY --------------------------------------------------------------*/
 /* MOBILE STYLES ------------------------------------------------------------*/
@@ -65,5 +69,49 @@ body {
 /* MEDIA QUERY --------------------------------------------------------------*/
 /* MOBILE STYLES ------------------------------------------------------------*/
 /* MEDIA QUERY --------------------------------------------------------------*/
-/* MOBILE STYLES ------------------------------------------------------------*/
-/* MEDIA QUERY --------------------------------------------------------------*/
+.header .navbar .collapsed {
+  background-color: white !important; }
+  .header .navbar .collapsed:focus {
+    background: #f0d6fa !important; }
+  .header .navbar .collapsed:active {
+    background: #f1cdff !important; }
+  .header .navbar .collapsed .navToggler__icon {
+    display: block !important; }
+  .header .navbar .collapsed .navToggler__icon_x {
+    display: none !important; }
+
+.header .navbar .navbar-toggler {
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+  .header .navbar .navbar-toggler:focus {
+    background: #f0d6fa; }
+  .header .navbar .navbar-toggler:active {
+    background: #f1cdff; }
+  .header .navbar .navbar-toggler .navToggler .navToggler__icon {
+    font-weight: 600;
+    display: none; }
+
+.header .navbar #navbarItens .navbar-nav {
+  padding: 43px 17px; }
+  .header .navbar #navbarItens .navbar-nav .nav-item .novo::after {
+    content: 'novo';
+    color: #000;
+    margin-left: 13px;
+    background-color: #f0d6fa;
+    padding: 5px 15px;
+    border-radius: 10px; }
+  .header .navbar #navbarItens .navbar-nav .nav-item .login {
+    color: #8A05BE !important;
+    font-weight: 450 !important; }
+    .header .navbar #navbarItens .navbar-nav .nav-item .login i {
+      padding-left: 5px; }
+  .header .navbar #navbarItens .navbar-nav .nav-item .nav-link {
+    color: rgba(80, 80, 80, 0.932);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px; }
+  .header .navbar #navbarItens .navbar-nav .nav-item.active .nav-link {
+    color: #8A05BE;
+    font-weight: 450; }
