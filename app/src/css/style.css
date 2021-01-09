@@ -90,8 +90,9 @@ body {
   .header .navbar .navbar-toggler:active {
     background: #f1cdff; }
   .header .navbar .navbar-toggler .navToggler .navToggler__icon {
-    font-weight: 600;
     display: none; }
+  .header .navbar .navbar-toggler .navToggler .navToggler__icon_x {
+    display: block; }
 
 .header .navbar #navbarItens .navbar-nav {
   padding: 43px 17px; }

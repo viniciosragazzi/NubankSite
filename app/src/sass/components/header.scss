@@ -29,11 +29,12 @@
       &:active{
         background: $secundary__hover;
       }
-
       .navToggler {
-        .navToggler__icon {
-          font-weight: 600;
-          display: none;
+        .navToggler__icon{
+          display:  none;
+      }
+        .navToggler__icon_x {
+            display: block;
         }
       }
     }
