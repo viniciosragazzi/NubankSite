@@ -6,7 +6,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Criar o menu toogle
+- [x] Criar o menu toggle
 
 
 ## 🤝 Colaboradores
