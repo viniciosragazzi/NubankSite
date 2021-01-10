@@ -1,81 +1,118 @@
 
 .header {
-  .navbar {
-    .collapsed {
-      background-color: white !important;
-      &:focus {
-        background: $secundary !important;
-      }
-      &:active{
-        background: $secundary__hover !important;
-      }
-      .navToggler__icon {
-        display: block !important;
-      }
-      .navToggler__icon_x {
-        display: none !important;
-      }
-    }
-    .navbar-toggler {
-      outline: none;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+  }
 
-      &:focus {
-        background: $secundary;
-      }
+  &__logo {
+    cursor: pointer;
+    margin: 15px;
+  }
 
-      &:active{
-        background: $secundary__hover;
-      }
-      .navToggler {
-        .navToggler__icon{
-          display:  none;
-      }
-        .navToggler__icon_x {
-            display: block;
+  &__hamburguer {
+    background: none;
+    width: 26px;
+    height: 25px;
+    border: none;
+    position: relative;
+    margin-right: 27px;
+    margin-top: 3px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    &--active {
+      span{
+        transform: rotate(45deg) translate(2px,2px);
+
+        &:before {
+          transform: rotate(-90deg) translate(6px,0px);
         }
       }
     }
 
-    #navbarItens {
-      .navbar-nav {
-        padding: 43px 17px;
+    span {
+      width: 15px;
+      height: 2px;
+      position: absolute;
+      top: 9px;
+      background-color: $cinza;
+      transition: all .3s linear;
 
-        .nav-item {
-          .novo {
-            &::after {
-              content: 'novo';
-              color: $black;
-              margin-left: 13px;
-              background-color: $secundary ;
-              padding: 5px 15px;
-              border-radius: 10px;
-            }
-          }
+      &::before {
+        content: '';
+        width: 15px;
+        height: 2px;
+        top: 6px;
+        right: 0;
+        position: absolute;
+        background-color: $cinza;
+        transition: all .3s linear;
+      }
+    }
+  }
 
-          .login {
-            color: $primary !important;
-            font-weight: 450 !important;
-            i{
-              padding-left: 5px;
-            }
-          }
+  &__menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-100vh);
+    height: calc(100vh - 63px);
+    transition: transform 0.2s ease-out 0s;
+    padding: 37px 0px;
+  }
 
-          .nav-link {
-            color:$cinza ;
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 23px;
-          }
+  .show {
+    transform: translateY(63px);
+  }
 
-          &.active {
-            .nav-link {
-              color: $primary;
-              font-weight: 450;
-            }
+  ul {
+    li {
+      list-style: none;
+      &.active {
+        a {
+          color: $primary;
+          font-weight: 500;
+        }
+      }
+      &.login {
+        a{
+          color: $primary;
+          font-weight: 500;
+        }
+      }
+
+      a {
+        color: $cinza;
+        font-size: 17px;
+        line-height: 40px;
+        text-decoration: none;
+        &.novo{
+          &:after{
+            content: 'novo';
+            margin-left: 15px;
+            background-color:$secundary ;
+            padding: 5px 15px;
+            border-radius: 10px;
           }
+        }
+          i{
+            margin-left: 5px;
+          }
+        &:hover{
+          color: $secundary__hover;
         }
       }
     }
