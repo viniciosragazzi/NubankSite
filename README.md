@@ -1,43 +1,35 @@
-# Boilerplate - Matheus Henrique
+# Clone site Nubank
 
-Boilerplate using Yarn, Gulp, Bootstrap, e SASS.
+> Esse projeto consiste em recriar o design do site da Nubank.
 
-## Installation
+### Ajustes e melhorias
 
-#### 1 - Clone Repository
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-```
-git clone https://github.com/matheushenrique1/boilerplate-yarn.git
+- [x] Criar o menu toggle
 
-```
 
-#### 2 - Install Yarn
+## 🤝 Colaboradores
 
-```
-https://classic.yarnpkg.com/en/docs/install
-```
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-#### 2 - Install Dependencies
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/234/725/original/side-portrait-of-a-black-man.jpg" width="100px;" alt="Avatar"/><br>
+        <sub>
+          <b>Vinicios Ragazzi</b>
+        </sub>
+      </a>
+    </td>
+</table>
 
-```
-yarn install
-```
 
-## How to Start (Yarn - Gulp)
+## 😄 Seja um dos contribuidores<br>
 
-1 - Copy the js files
+Quer fazer parte desse projeto? entre em contato comigo através dos links na pagina inicial!
 
-```
-yarn copyjs
-```
 
-2.1 - Compiles the files SCSS
 
-2.2 - Initializes the localhost server.
-http://localhost:3000/
-
-```
-yarn start
-```
-
-# boilerplate-1
+[⬆ Voltar ao topo](#nome-do-projeto)<br>
