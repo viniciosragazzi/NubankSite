@@ -60,10 +60,9 @@ textarea {
 /* Large devices (large desktops, 1200px and up) */
 /* MOBILE STYLES ------------------------------------------------------------*/
 body {
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden; }
 
-/* MEDIA QUERY --------------------------------------------------------------*/
-/* MOBILE STYLES ------------------------------------------------------------*/
 /* MEDIA QUERY --------------------------------------------------------------*/
 /* MOBILE STYLES ------------------------------------------------------------*/
 /* MEDIA QUERY --------------------------------------------------------------*/
@@ -74,11 +73,15 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 64px; }
+  height: 64px;
+  position: fixed;
+  background: #fff;
+  z-index: 100; }
 
 .header__logo {
   cursor: pointer;
-  margin: 15px; }
+  margin: 15px;
+  z-index: 10; }
 
 .header__hamburguer {
   background: none;
@@ -125,7 +128,7 @@ body {
   right: 0;
   z-index: 1;
   transform: translateY(-100vh);
-  height: calc(100vh - 63px);
+  height: calc(104vh - 63px);
   transition: transform 0.2s ease-out 0s;
   padding: 37px 0px; }
 
@@ -137,9 +140,11 @@ body {
   .header ul li.active a {
     color: #8A05BE;
     font-weight: 500; }
-  .header ul li.login a {
-    color: #8A05BE;
-    font-weight: 500; }
+  .header ul li.login {
+    margin-left: auto; }
+    .header ul li.login a {
+      color: #8A05BE;
+      font-weight: 500; }
   .header ul li a {
     color: #585757;
     font-size: 17px;
@@ -155,3 +160,89 @@ body {
       margin-left: 5px; }
     .header ul li a:hover {
       color: #db95f7; }
+
+@media (min-width: 992px) {
+  body {
+    overflow-x: hidden; }
+  .header ul {
+    display: flex;
+    padding-right: 49px; }
+  .header ul li {
+    list-style: none;
+    padding: 10px 15px; }
+  .novo:after {
+    display: none; }
+  .header__menu {
+    padding: 0;
+    height: 0;
+    transform: translateY(0px) translateX(48px); }
+  .header__hamburguer {
+    display: none; }
+  .show {
+    transform: translateY(0px) translateX(48px) !important; } }
+
+/* MOBILE STYLES ------------------------------------------------------------*/
+.footer {
+  width: 100vw;
+  z-index: 0;
+  background: #111111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+  .footer__colunas .coluna {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 38px;
+    padding-bottom: 20px; }
+    .footer__colunas .coluna p {
+      font-size: 18px;
+      color: #dbd9d9;
+      padding-bottom: 8px; }
+    .footer__colunas .coluna a {
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 30px;
+      z-index: 1;
+      text-decoration: none; }
+      .footer__colunas .coluna a:hover {
+        color: #db95f7; }
+  .footer__colunas .coluna-endereco {
+    display: flex;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+    margin-top: 40px; }
+    .footer__colunas .coluna-endereco .area-infos {
+      width: 300px;
+      margin-bottom: 10px; }
+      .footer__colunas .coluna-endereco .area-infos p {
+        color: white;
+        margin-top: 20px; }
+    .footer__colunas .coluna-endereco .area-redes {
+      display: flex; }
+      .footer__colunas .coluna-endereco .area-redes i {
+        color: white;
+        font-size: 20px;
+        margin-left: 30px; }
+  .footer .idioma {
+    margin-top: 45px;
+    margin-bottom: 80px;
+    padding-left: 35px; }
+    .footer .idioma .form-check-label {
+      padding-right: 30px;
+      color: white; }
+
+/* MEDIA QUERY --------------------------------------------------------------*/
+@media (min-width: 992px) {
+  .footer__colunas .coluna-endereco .area-redes {
+    display: flex;
+    padding-left: 15vw; }
+  .footer__colunas .coluna-endereco .area-infos {
+    display: flex; }
+    .footer__colunas .coluna-endereco .area-infos img {
+      margin-right: 15px; } }
+
+hr {
+  border-color: rgba(36, 36, 36, 0.651);
+  box-sizing: border-box;
+  width: 100%; }
